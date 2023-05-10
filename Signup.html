@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="bootstrap-5.2.0-dist/css/bootstrap.min.css"> -->
+    <title>Document</title>
+    <style>
+        body {
+            background-image: url(background\ color\ for\ list.jfif);
+            padding-top: 100px;
+        }
+
+        .woo {
+            margin-top: 38px;
+            margin-left: 140px;
+            width: 120px;
+            height: 40px;
+            border-radius: 10px;
+            background-color: rgb(250, 207, 15);
+            color: rgb(51, 51, 51);
+            border: 1px solid rgb(250, 207, 16);
+            font-size: 17px;
+            font-weight: 600;
+            font-family: 'Times New Roman', Times, serif;
+
+        }
+
+        .woo a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .main {
+            width: 400px;
+            height: 420px;
+            box-shadow: 2px 3px 2px grey;
+            background-color: white;
+            border: 1px solid white;
+            /* position: absolute; */
+            border-radius: 17px;
+            /* z-index: 999; */
+            margin-top: 200px;
+            margin: auto;
+            /* text-align: center; */
+            /* align-items: center; */
+            /* margin-left: 130px; */
+        }
+
+        .lona {
+            margin-left: 42px;
+            color: rgb(51, 51, 51);
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .level {
+            margin-left: 42px;
+            width: 300px;
+            border: 1px solid whitesmoke;
+            /* outline: 1px solid blue; */
+            margin-top: 30px;
+            height: 35px;
+            background-color: rgb(240, 240, 240);
+            font-size: 15px;
+            font-family: 'Times New Roman', Times, serif;
+            border-radius: 8px;
+            padding-left: 14px;
+            box-shadow: 0px 0px 4px black;
+        }
+
+        .level ::placeholder {
+            color: whitesmoke;
+        }
+
+        .level:focus {
+            outline: 1px solid rgb(250, 207, 16);
+        }
+
+        .pdp {
+            margin-left: 70px;
+            margin-top: 30px;
+            color: rgb(51, 51, 51);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main container form">
+        <!-- <button onclick="flow()" class="icofont-navigation-menu yes"></button> -->
+        <h2 class="lona">SIGN UP</h2>
+        <input class="level" type="text" id="level1" placeholder="Email or phonenumber" required>
+        <input class="level" type="text" id="level2" placeholder="password" required>
+        <input class="level" type="text" id="level3" placeholder="username" required>
+        <button onclick="life()" class="woo"><a href="login.html">Submit</a></button>
+
+    </div>
+
+
+
+
+    <script>
+        // let user = [];
+        let e_mail = document.getElementById("level1")
+        let pass_word = document.getElementById("level2")
+        let user_name = document.getElementById("level3")
+        function life() {
+           let all = {
+            email:e_mail.value,
+            password:pass_word.value,
+            username:user_name.value,
+           }
+        //    user.push(all);
+        //    console.log(user);
+           localStorage.setItem("new", JSON.stringify(all));
+          setTimeout(() => {
+            window.location.href = 'login.html'
+          }, 2000);
+        }
+    </script>
+</body>
+
+</html>

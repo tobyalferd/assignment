@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="" id="screen">
+    <button onclick="red()">click</button>
+    <p id="ring"></p>
+</body>
+</html>
+<script>
+    function red(){
+        let me = document.getElementById("screen").value
+          let ring = document.getElementById("ring")
+          ring.innerHTML= `gabriel is a ${me}`
+    };
+</script>

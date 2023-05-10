@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="icofont/icofont.min.css">
+    <title>Document</title>
+    <style>
+        .teeth {
+            border: 1px solid black;
+            height: fit-content;
+            margin-right: 1200px;
+            /* width: 1000px; */
+            /* margin-top: 100px; */
+        }
+
+        .main {
+            width: 400px;
+            height: 420px;
+            box-shadow: 2px 3px 10px black;
+            background-color: red;
+            border: 1px solid black;
+            position: absolute;
+            border-radius: 17px;
+            z-index: 999;
+            margin-top: 40px;
+            margin-left: 130px;
+        }
+
+        .solo {
+            width: 400px;
+            height: 400px;
+            margin-left: 131px;
+            margin-top: 60px;
+
+            top: 0;
+            border-radius: 17px;
+            position: absolute;
+            transition: all 0.5s linear;
+            box-shadow: 1px 2px 8px black;
+            background-color: red;
+            border: 1px solid black;
+            /* overflow-x: hidden; */
+
+        }
+
+        .yes {
+            margin-left: 360px;
+            margin-top: 10px;
+        }
+
+        .go {
+            /* transform: translateX(270px); */
+            margin-left: 500px;
+        }
+
+        .lona {
+            margin-left: 42px;
+            color: white;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .level {
+            margin-left: 42px;
+            width: 300px;
+            border: 1px solid whitesmoke;
+            /* outline: 1px solid blue; */
+            margin-top: 30px;
+            height: 35px;
+            font-size: 15px;
+            font-family: 'Times New Roman', Times, serif;
+            border-radius: 8px;
+            padding-left: 14px;
+            box-shadow: 0px 0px 4px black;
+        }
+
+        .level:focus {
+            outline: 1px solid red;
+        }
+
+        .woo {
+            margin-top: 38px;
+            margin-left: 140px;
+            width: 120px;
+            height: 40px;
+            border-radius: 10px;
+            background-color: red;
+            color: white;
+            border: 1px solid white;
+            font-size: 17px;
+            font-weight: 600;
+            font-family: 'Times New Roman', Times, serif;
+
+        }
+
+        .woo a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .blue {
+            text-decoration: none;
+            color: black;
+        }
+
+        .blue:hover {
+            color: blue;
+        }
+
+        .pdp {
+            margin-left: 70px;
+            margin-top: 30px;
+            color: white;
+        }
+
+        .God {
+            margin-left: 50px;
+            color: white;
+            font-family: 'Times New Roman', Times, serif;
+
+        }
+
+        .ooo {
+            margin-left: 50px;
+            width: 300px;
+            height: 35px;
+            box-shadow: 0px 0px 4px black;
+            border-radius: 8px;
+            border: 1px solid whitesmoke;
+            margin-top: 5px;
+            padding-left: 12px;
+
+        }
+
+        .ooo:focus {
+            outline: 1px solid red;
+        }
+
+        .ooo2 {
+            margin-left: 50px;
+            width: 300px;
+            height: 35px;
+            box-shadow: 0px 0px 4px black;
+            border-radius: 8px;
+            border: 1px solid whitesmoke;
+            margin-top: 18px;
+            padding-left: 12px;
+
+        }
+
+        .ooo2:focus {
+            outline: 1px solid red;
+        }
+
+        .child {
+            width: 320px;
+            height: 40px;
+            border-radius: 8px;
+            margin-top: 25px;
+            margin-left: 50px;
+            margin-bottom: 20px;
+            background-color: red;
+            color: white;
+            border: 1px solid white;
+            font-size: 17px;
+            font-weight: 600;
+            font-family: 'Times New Roman', Times, serif;
+
+
+        }
+
+        .child a {
+            text-decoration: none;
+            color: white;
+        }
+
+      
+    
+
+    </style>
+</head>
+
+<body>
+    <div class="teeth">
+        <div class="main">
+            <!-- <button onclick="flow()" class="icofont-navigation-menu yes"></button> -->
+            <h2 class="lona">LOG IN</h2>
+            <input class="level" type="text" id="level1" placeholder="Email or phonenumber" required>
+            <input class="level" type="text" id="level2" placeholder="password" required>
+            <input class="level" type="text" id="level3" placeholder="username" required>
+            <button onclick="life(event)" class="woo">Log in</button>
+            <p class="pdp">Dont have an account? <a class="blue" onclick="flow()" href="#">sign up here</a></p>
+        </div>
+        <div id="sop" class="solo">
+            <h2 class="God">Sign up</h2>
+            <label for="Email or phonenumber"></label><br>
+            <input class="ooo" type="text" name="firstname" id="God" placeholder="Email or phonenumber" required>
+            <label for="password"></label><br>
+            <input class="ooo2" type="text" name="lastname" id="Son" placeholder="password" required>
+            <label for="username"></label><br>
+            <input class="ooo2" type="text" name="Email" id="Spirit" placeholder="username" required>
+            <button onclick="live(event)" class="child"><a href="#">Join now</a></button>
+        </div>
+    </div>
+</body>
+
+</html>
+<script>
+src="bootstrap-5.2.0-dist/js/bootstrap.min.js">
+</script>
+
+<script>
+    
+
+    let user = [];
+    let act = document.getElementById("level1")
+        let act2 = document.getElementById("level2")
+        let act3 = document.getElementById("level3")
+        let God= document.getElementById("God")
+        let Spirit = document.getElementById("Son")
+        let son = document.getElementById("Spirit")
+    function life() {
+        let act = document.getElementById("level1")
+        let act2 = document.getElementById("level2")
+        let act3 = document.getElementById("level3")
+        let all = {
+            email: act.value,
+            password: act2.value,
+            username: act3.value,
+        }
+        user.push(all);
+        console.log(user)
+       
+    }
+    function live(){
+        let act = document.getElementById("level1")
+        let act2 = document.getElementById("level2")
+        let act3 = document.getElementById("level3")
+        let God= document.getElementById("God")
+        let Spirit = document.getElementById("Son")
+        let son = document.getElementById("Spirit")
+        let found = user.find((current)=> God.email == act.value && Spirit.password == act2.value);
+        console.log(found);
+        let all = {
+            email: act.value,
+            password: act2.value,
+            username: act3.value,
+        }
+       
+        if(found){
+            alert("Login Successful")
+        }else{
+            alert("User not found")
+        }
+    }
+
+    function flow() {
+        document.getElementById('sop').classList.toggle('go')
+    }
+
+
+
+
+    
+</script>
